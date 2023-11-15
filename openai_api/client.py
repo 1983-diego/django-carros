@@ -8,7 +8,7 @@ def get_car_ai_bio(model, brand, year):
     prompt = '''
     Me mostre uma descrição de venda para o carro {}{}{} em apenas 250 caracteres. Fale coisas específicas desse modelo de carro.
     '''
-    openai.api_key = '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' # os.getenv('OPENAI_API_KEY')
+    openai.api_key = 'token-invalido' # os.getenv('OPENAI_API_KEY')
     prompt = prompt.format(brand, model, year)
     response = openai.Completion.create(
         model="text-davinci-003",
